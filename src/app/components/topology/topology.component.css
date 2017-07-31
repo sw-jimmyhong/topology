@@ -1,0 +1,62 @@
+
+#viz_container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+svg {
+    border: solid 2px #aaa;
+}
+
+label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+.tooltip {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	width: 300px;
+	height: 80px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: whitesmoke;
+	border: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.nodelabels text {
+	text-anchor: middle;
+	font: 12px/1.4 'Roboto Condensed', sans-serif;
+}
+
+.linklabels text {
+	text-anchor: middle;
+	font: 12px/1.4 'Roboto Condensed', sans-serif;
+}
+
+.nodes circle {
+  stroke: #000;
+  stroke-width: 1.5px;
+  fill: blue;
+}
+.links {
+  fill: none;
+  stroke: #282828;
+  stroke-width: 1.5px;
+  stroke-opacity: 1;
+  stroke-dasharray: 5;
+  stroke-dashoffset: 25;
+  animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 5;
+  }
+}
+

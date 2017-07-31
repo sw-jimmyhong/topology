@@ -1,0 +1,10 @@
+<button (click)="eventClick($event)" id="split">Split</button>
+<button (click)="eventClick($event)" id="combine">Combine</button>
+<button (click)="eventClick($event)" id="hide">Hide Links</button>
+<button (click)="eventClick($event)" id="show">Show Links</button>
+<div>
+  <label><input (input)="inputChange($event)" style="width:240px;" type="range" min="0" max="1" step="any" value="0.5"> Link Strength</label>
+</div>
+<div id="viz_container">
+  <svg id="viz" width="1200" height="760"></svg>
+</div>
